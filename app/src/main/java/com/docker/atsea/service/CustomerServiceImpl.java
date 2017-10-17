@@ -10,6 +10,12 @@ import org.springframework.transaction.annotation.Transactional;
 import com.docker.atsea.model.Customer;
 import com.docker.atsea.repositories.CustomerRepository;
 
+// Customer数据操作的实现类
+// Spring Boot 使用事务非常简单，首先使用注解 @EnableTransactionManagement 开启事务支持后，
+// 然后在访问数据库的Service方法上添加注解 @Transactional 便可。
+// Service通过Repository访问数据库
+// 这些操作好像都比较平凡，主要是JpaRepository和Customer的Model实现的。
+
 @Service("customerService")
 @Transactional
 public class CustomerServiceImpl implements CustomerService {

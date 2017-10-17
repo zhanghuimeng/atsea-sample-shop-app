@@ -10,6 +10,9 @@ import com.docker.atsea.model.Order;
 import com.docker.atsea.repositories.CustomerRepository;
 import com.docker.atsea.repositories.OrderRepository;
 
+// 实现Order相关的数据库操作
+// 结果，其实OrderRepository里面什么都没写，因为继承了JpaRepository就够了
+
 @Service("orderService")
 @Transactional
 public class OrderServiceImpl implements OrderService {

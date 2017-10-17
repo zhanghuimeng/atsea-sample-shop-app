@@ -11,6 +11,8 @@ import com.docker.atsea.service.ProductService;
 import com.docker.atsea.service.ProductServiceImpl;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
+// 不知道这个类是干什么的
+
 public class BeanConfiguration {
 
 	@Bean

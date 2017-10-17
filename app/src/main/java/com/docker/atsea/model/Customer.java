@@ -12,6 +12,25 @@ import javax.persistence.Column;
 import org.hibernate.annotations.Type;
 import org.hibernate.validator.constraints.NotEmpty;
 
+// 这个类定义了Customer对象及其数据库格式、访问方法
+
+/**
+ *
+ javax.persistence
+ 这个包的作用是持久化的作用，具体的说就是在实体类中进行元数据标签的作用，是ORM框架中用到的。
+ ORM框架可以通过这个元数据标签，使得实体类与数据库中的表建立映射关系。
+ 例如javax.persistence.Column标识实体类中的这个属性对应于数据库中的一个字段等等。
+
+ 这个好像不是对于hibernate使用的，而是open jpa使用，open jpa也是一种orm框架和hibernate类似。
+ */
+
+/**
+ * Hibernate是一个开放源代码的对象关系映射框架，它对JDBC进行了非常轻量级的对象封装，它将POJO与数据库表建立映射关系，
+ * 是一个全自动的orm框架，hibernate可以自动生成SQL语句，自动执行，使得Java程序员可以随心所欲的使用对象编程思维来操纵数据库。
+ * Hibernate可以应用在任何使用JDBC的场合，既可以在Java的客户端程序使用，也可以在Servlet/JSP的Web应用中使用，
+ * 最具革命意义的是，Hibernate可以在应用EJB的J2EE架构中取代CMP，完成数据持久化的重任。
+ */
+
 @Entity
 @Table(name = "customer")
 public class Customer implements Serializable {

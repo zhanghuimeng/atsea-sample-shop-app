@@ -1,8 +1,10 @@
 package com.docker.atsea.service;
 
+import com.docker.atsea.model.Customer;
+
 import java.util.List;
 
-import com.docker.atsea.model.Customer;
+// 与Customer数据相关的各种服务
 
 public interface CustomerService {
 
